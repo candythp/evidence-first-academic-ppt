@@ -1,0 +1,5 @@
+interface:
+  display_name: "Evidence-First Academic PPT"
+  short_description: "Create editable academic decks from complete research evidence"
+  brand_color: "#0B4F94"
+  default_prompt: "Use $evidence-first-academic-ppt to turn my complete research materials into an editable academic presentation."
