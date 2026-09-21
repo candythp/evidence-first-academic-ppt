@@ -45,11 +45,13 @@ Render every slide. Verify:
 - chapter title and page number are synchronized;
 - current institution and logo treatment are correct;
 - conclusion is supported by the displayed evidence;
+- each result/discussion slide has one page-level claim and each distinct figure group has a nearby reading explanation;
 - every panel parameter is mapped;
 - axes, legends, color bars, and scale bars are readable;
 - figures are not AI-redrawn;
 - adjacent evidence slides do not repeat the same body wireframe without a source-driven reason;
 - scientific figures use the largest practical readable size, with blank source margins trimmed when safe;
+- bottom information bands appear only when they carry shared conditions, units, case mapping, or quantitative summaries;
 - speaker notes match the final slide;
 - the PPTX package opens and expected native text objects exist.
 

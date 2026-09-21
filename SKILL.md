@@ -51,12 +51,14 @@ Each candidate must preserve the fixed information hierarchy:
 2. left-aligned slide title;
 3. light-gray qualitative conclusion band immediately below the title;
 4. real scientific figure group with explicit panel/parameter mapping;
-5. concise interpretation placed where it best supports the figure group: an arrow list for one dominant figure, short conclusions above parallel figures, or a compact comparison row below a dense figure group;
-6. fixed conditions and key quantitative values in a band beneath the evidence area.
+5. concise evidence-specific interpretation placed next to the figure group it explains: an arrow list for one dominant figure, short conclusions above parallel figures, or a compact explanation box below a dense figure group;
+6. fixed conditions and key quantitative values placed near the evidence, using a bottom band only when it improves comparison or prevents repeated labels.
+
+For every result or discussion slide, enforce the result-page contract: one page-level claim beneath the title, one readable evidence area, and one local explanation for each distinct figure group. The page-level claim may be a single sentence, two compact bullets, or one longer conclusion when the reasoning cannot be compressed without losing meaning. Local explanations must tell the audience what is compared, which parameter changes, what visual response to inspect, and what interpretation the source supports. A figure is not self-explanatory merely because its panel letters are visible.
 
 Show the candidates, describe only the meaningful layout differences, and wait for the user's selection before producing the full deck. Save the decision and feedback to `style_selection.json`. Treat the selected pattern as a visual language rather than a repeated wireframe. Before rendering the full deck, create `layout_plan.md` using [layout planning](references/layout-planning.md). Choose each slide's composition from the evidence count, figure geometry, argumentative relationship, and the neighboring slides. Enlarge sparse evidence instead of leaving decorative whitespace. Redraw program flows and relationship diagrams as native editable shapes from the source description when the original figure is too small or visually weak; preserve the source logic and do not add unsupported steps.
 
-Audit the layout sequence before delivery. Avoid using the same body wireframe on more than two consecutive evidence slides unless the source figures genuinely require it. In particular, do not repeat an identical row of three conclusion cards above three figures throughout the deck. Vary figure-first, comparison, asymmetric dashboard, reverse analysis, timeline, and native-process layouts while keeping the selected navigation, title hierarchy, conclusion band, palette, and bottom information band consistent.
+Audit the layout sequence before delivery. Avoid using the same body wireframe on more than two consecutive evidence slides unless the source figures genuinely require it. In particular, do not repeat an identical row of three conclusion cards above three figures throughout the deck. Vary figure-first, comparison, asymmetric dashboard, reverse analysis, timeline, and native-process layouts while keeping the selected navigation, title hierarchy, conclusion treatment, palette, and local explanation styling consistent. Do not reserve a bottom information band on every slide; use it only when shared conditions, units, cases, or quantitative summaries need a common reading location.
 
 ## Rebuild an editable presentation
 

@@ -2,7 +2,7 @@
 
 A Codex skill for creating editable, source-grounded academic PowerPoint decks from user-provided papers, reports, figures, images, and data.
 
-The default visual direction is a restrained deep-blue academic style: numbered top navigation, conclusion-first slide hierarchy, real scientific figures as the evidence layer, explicit panel/parameter mapping, adaptive interpretation layouts, and a data band beneath the evidence area.
+The default visual direction is a restrained deep-blue academic style: numbered top navigation, conclusion-first slide hierarchy, real scientific figures as the evidence layer, explicit panel/parameter mapping, adaptive interpretation layouts, and local explanations placed beside the evidence they interpret.
 
 ## What makes it different
 
@@ -12,6 +12,8 @@ The default visual direction is a restrained deep-blue academic style: numbered 
 - Institution name and logo are confirmed for each task; historical branding is never reused automatically.
 - Two or three layout candidates are shown before the full deck is produced.
 - The selected candidate becomes a visual grammar, while each slide receives its own evidence-driven layout plan.
+- Result and discussion slides pair one page-level claim with readable evidence and a nearby explanation for each distinct figure group.
+- Shared condition/data bands are used when they clarify comparisons rather than reserved as a fixed footer.
 - Research-problem chapters are derived from the source introduction, engineering background, literature status, and stated research gaps.
 - Process diagrams may be rebuilt as editable native shapes when the source description fully specifies the logic.
 - The final PPTX keeps slide structure, labels, arrows, and explanatory text editable.

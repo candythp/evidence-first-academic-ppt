@@ -12,7 +12,7 @@ Record:
 - argumentative relationship: sequence, comparison, controlled variable, primary/supporting evidence, or mechanism-to-decision;
 - chosen body composition;
 - reason the composition fits the evidence;
-- panel/parameter mapping and bottom-band contents;
+- panel/parameter mapping, evidence-group explanations, and whether a shared bottom band is justified;
 - any source-grounded native diagram to rebuild.
 
 ## Research-problem chapter
@@ -38,6 +38,14 @@ Choose from the evidence rather than from a fixed template:
 - **Staged operating event:** place the action timeline above parallel response figures.
 - **Algorithm or calculation flow:** use a full-width native process diagram with visible loops, branches, convergence tests, and outputs.
 
+For every result or discussion slide, verify the composition answers three questions before rendering:
+
+1. What single conclusion should the audience retain from this page?
+2. Which evidence group supports each part of that conclusion?
+3. What adjacent text teaches the audience how to read each group without relying on spoken explanation alone?
+
+If a figure group has no adjacent answer to the third question, revise the layout or split the slide. If the same explanation applies to all figures, use one shared explanation rather than repeating it.
+
 ## Figure sizing
 
 Make axes, legends, color bars, scale bars, and condition labels readable at presentation size. Trim blank source margins when this does not remove evidence. Panel groups may be separated or their display boxes may use independently tuned width and height when the user explicitly prefers a compact comparison grid. Preserve every scientific element and do not redraw curves, change data, or omit conditions.
@@ -51,5 +59,7 @@ Review the contact sheet before delivery:
 - avoid the same body wireframe on more than two consecutive evidence slides unless the argument genuinely continues;
 - avoid repeating a row of identical conclusion cards across the deck;
 - check that layout changes follow evidence changes rather than decoration;
+- confirm every distinct figure group has a nearby explanation and every explanation points to visible evidence;
+- remove bottom bands that contain no shared condition, unit, case mapping, or quantitative summary;
 - confirm that related slides retain enough visual continuity to be read as one section;
 - update `style_selection.json` with explicit user feedback and regenerate affected pages.

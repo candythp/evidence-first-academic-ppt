@@ -8,7 +8,7 @@
 - Light-gray conclusion band directly below the title; short qualitative conclusion with selective blue emphasis.
 - Scientific figures dominate the body. Preserve axes, color bars, legends, scale bars, and panel labels.
 - Use arrow-list markers for parallel observations. Use numbered markers only for a true sequence or ordered method.
-- Place fixed conditions and key values in a band below the figure, aligned to the figure rather than floating in a corner.
+- Place fixed conditions and key values near the evidence. Use a shared band below the figure only when several panels share conditions, units, cases, or a quantitative summary.
 - Use one sans-serif family that supports the deck language. Avoid decorative fonts, gradients, shadows, and unnecessary icons.
 - When the selected style uses numbered top navigation, keep the active chapter as a dark-blue tab and use a two-level title hierarchy: small subsection/chapter label plus a large slide-specific title.
 
@@ -16,21 +16,23 @@
 
 Choose according to figure geometry:
 
+All result layouts use the same reading hierarchy: page-level conclusion, readable evidence, then evidence-specific explanation adjacent to the figure group it interprets. The location of the explanation may change; its relationship to the evidence may not.
+
 ### Figure right, explanation left
 
-Use for one wide or tall evidence group. The left column contains up to three arrow bullets: morphology, concentration or field distribution, and overall response. The data band sits beneath the figure on the right.
+Use for one wide or tall evidence group. The left column contains up to three arrow bullets: morphology, concentration or field distribution, and overall response. Put shared data beneath the figure on the right only when it helps the audience decode the comparison.
 
 ### Figure first, explanation below
 
-Use for dense multi-panel figures. Put the figure group at maximum readable size, then use a compact arrow row and parameter band below it.
+Use for dense multi-panel figures. Put the figure group at maximum readable size, then use a compact arrow row or local explanation box below it. Add a parameter band only when the panels cannot be decoded from their own labels.
 
 ### Comparison split
 
-Use for two conditions or methods with comparable figures. Align their plot areas and put the comparison claim in one shared conclusion band.
+Use for two conditions or methods with comparable figures. Align their plot areas, put the comparison claim in one shared conclusion band, and attach a local explanation to each side when the two evidence groups support different sub-findings.
 
 ### Parallel evidence row
 
-Use for two or three figures with equal argumentative weight. Place them horizontally at the largest readable size. Put a short evidence-specific conclusion above each figure and keep shared conditions in one band below the row. Do not force these slides into an explanation-left/figure-right split.
+Use for two or three figures with equal argumentative weight. Place them horizontally at the largest readable size. Put a short evidence-specific conclusion above or below each figure and use one shared conditions band only when needed. Do not force these slides into an explanation-left/figure-right split.
 
 ### Native process reconstruction
 
@@ -38,7 +40,7 @@ Use for calculation procedures, solver loops, model coupling, and technical rout
 
 ### Density rule
 
-Estimate the useful occupied area after reserving navigation, title, conclusion band, and the bottom condition band. If the scientific evidence occupies less than roughly two thirds of the remaining body, enlarge it, change the arrangement, or convert source-described relationships into native diagrams. Do not fill space with decorative shapes.
+Estimate the useful occupied area after reserving navigation, title, conclusion band, and any necessary condition labels. If the scientific evidence occupies less than roughly two thirds of the remaining body, enlarge it, change the arrangement, or convert source-described relationships into native diagrams. Do not reserve an empty bottom band or fill space with decorative shapes.
 
 ## Sequence-level composition
 
