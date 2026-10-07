@@ -1,6 +1,6 @@
 # Layout planning
 
-Create `layout_plan.md` after the user selects a visual candidate and before generating the full deck. The selected candidate defines navigation, title hierarchy, conclusion treatment, palette, typography, branding, and information-band styling. It does not force every slide into the same body grid.
+Create `layout_plan.md` after the user selects an ImageGen visual candidate and before generating layout images for the full deck. The selected candidate defines navigation, title hierarchy, conclusion treatment, palette, typography, branding, and information-band styling. It does not force every slide into the same body grid. Follow [ImageGen-to-editable workflow](imagegen-to-editable.md): every page receives a generated layout reference before editable reconstruction.
 
 ## Required row for each slide
 
@@ -14,6 +14,9 @@ Record:
 - reason the composition fits the evidence;
 - panel/parameter mapping, evidence-group explanations, and whether a shared bottom band is justified;
 - any source-grounded native diagram to rebuild.
+- exact slide payload ID, ImageGen prompt/reference-image inputs, and resulting layout-image path;
+- original figure asset IDs/hashes and normalized placement boxes, distinguishing genuine evidence from generation placeholders;
+- shared-header seed group and its active-navigation variant.
 
 ## Research-problem chapter
 

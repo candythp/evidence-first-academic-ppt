@@ -18,7 +18,9 @@ Use the free-form answer for journal-specific or custom titles. A numerical stud
 
 ## Branding question
 
-Suggested UI question:
+Apply [local defaults and saved layout references](local-layout-references.md) and explicit current user choices first. Ask the following only when branding is still unresolved, such as a requested logo without an authorized matching asset. Do not ask the user to reconfirm an already resolved institution or text-only treatment.
+
+Suggested UI question when needed:
 
 > 本次 PPT 的学校或机构标识如何处理？
 
@@ -46,7 +48,11 @@ Save:
   "chapter_titles": [],
   "institution_name": "",
   "logo_policy": "current-material | user-provided | none",
+  "production_mode": "imagegen_then_editable",
+  "requested_deliverables": ["pptx"],
   "language": "zh-CN",
   "visible_source_policy": "user-owned-hidden | visible | mixed"
 }
 ```
+
+Default to `imagegen_then_editable` without asking the user to choose a production method. `requested_deliverables` records the user's actual scope (`pptx`, `preview`, or both); working evidence/QA files remain internal. Set `production_mode` to `native_only` only for an explicit user override, and record its reason. Missing ImageGen access is a capability blocker, not an implicit override.

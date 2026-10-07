@@ -59,6 +59,10 @@ Keep the visual grammar consistent while changing the body geometry. Repetition 
 
 The chosen preview defines the visual baseline, not a rigid slide template. Adapt widths and positions to the evidence while preserving information hierarchy.
 
+## Image-first consistency
+
+Apply this visual system to ImageGen candidates and every full-deck layout image before editable reconstruction. Record common header groups, canvas, typography, and palette in `design_spec.md`; inspect the generated sequence for branding/navigation drift. After image review, reuse actual native header-seed objects across reconstructed pages, allowing only recorded active-chapter/page variants. Retain original scientific figures independently rather than extracting generated plots. See [ImageGen-to-editable workflow](imagegen-to-editable.md).
+
 ## Branding
 
-Deep blue is a neutral default, not proof of any school identity. Derive institution name, logo, and official color only from current materials or an explicit user instruction. Do not recolor a logo unless an official monochrome asset is supplied.
+Apply the institution default and layout-reference boundaries in [local defaults and saved layout references](local-layout-references.md), unless the current user specifies another institution or no institution. Deep blue is a visual default, not proof of an official school color. Use logos and official colors only from authorized matching assets or explicit current user instructions. Do not recolor a logo unless an official monochrome asset is supplied.

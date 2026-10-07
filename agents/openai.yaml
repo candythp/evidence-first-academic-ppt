@@ -1,5 +1,5 @@
 interface:
   display_name: "Evidence-First Academic PPT"
-  short_description: "Create editable academic decks from complete research evidence"
+  short_description: "Generate academic slide layouts, then rebuild editable PPTX"
   brand_color: "#0B4F94"
-  default_prompt: "Use $evidence-first-academic-ppt to turn my complete research materials into an editable academic presentation."
+  default_prompt: "Use $evidence-first-academic-ppt to generate ImageGen layouts for every slide from my complete research materials, then reconstruct an editable academic PowerPoint with original scientific figures."

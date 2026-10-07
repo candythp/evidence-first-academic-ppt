@@ -1,60 +1,44 @@
 # Workflow and deliverables
 
-## Project files
+## Working files and delivery files
 
-Create a dedicated output directory and keep source files read-only. Maintain:
+Use a dedicated internal work directory and keep source files read-only. Maintain:
 
-- `brief_lock.json`
-- `material_audit.md`
-- `content_outline.md`
-- `evidence_map.json`
-- `layout_plan.md`
-- `design_spec.md`
-- `style_selection.json`
-- `previews/candidates/`
-- `previews/full-deck/`
-- `exports/<presentation>.pptx`
-- `exports/full-deck-preview.png`
-- `qa/verification.md`
+- `brief_lock.json`, including `production_mode: "imagegen_then_editable"` or the user's explicit override;
+- `material_audit.md`, `content_outline.md`, `evidence_map.json`;
+- `slide_payloads.json`, `layout_plan.md`, `design_spec.md`, `style_selection.json`;
+- `imagegen_manifest.json` and immutable raw generation images;
+- reviewed layout references, exact-source composites when available, and a full-deck contact sheet;
+- shared-header seeds and private `page_tasks/<slide_id>/` construction/QA bundles for editable-deck work;
+- merge integrity report and final saved-file hash.
 
-## Preview sequence
+Create only files needed by the requested scope. Keep internal maps, JSON, scripts, raw images, and page decks out of the delivery folder. Default editable-deck delivery is one merged PPTX with notes embedded. Deliver the full-deck preview or internal reports when the user asks for them or asks for preview plus PPTX.
 
-1. Audit sources and lock chapters/branding.
-2. Build the evidence map and representative-slide copy.
-3. Generate two or three layout candidates with identical evidence.
-4. Composite the original scientific figures if the generation tool cannot preserve them exactly.
-5. Wait for the user's explicit selection.
-6. Create `layout_plan.md` for every slide, treating the selected candidate as a visual grammar rather than a repeated wireframe.
-7. Generate or reconstruct the full-deck preview using the selected hierarchy and per-slide plan.
-8. Inspect the full-deck sequence for repeated body layouts, undersized figures, unsupported claims, and empty areas.
-9. Author the editable PPTX only when the user requests it.
+## Default sequence
 
-Record selected candidate, liked features, rejected features, and requested modifications. Do not infer a long-term preference from silence.
+1. Audit sources and lock chapters, institution, and production mode.
+2. Build the evidence map and exact per-page payloads.
+3. Generate representative layout candidates with the actual ImageGen tool and the same source assets.
+4. Collect the style choice once; reuse an explicit choice already given for this task.
+5. Write the per-page plan and generate an ImageGen layout image for every slide.
+6. Review the full image sequence, reconcile text with payloads, map original assets, and freeze reconstruction references.
+7. For preview-only work, deliver reviewed evidence-complete previews and stop without creating any PPTX.
+8. For editable-deck work, create shared native header seeds and isolated one-page editable reconstructions.
+9. Render, compare, and accept each page, preserving original scientific assets and documenting embedded-label exceptions.
+10. Merge accepted pages in outline order, verify structure/assets/headers/notes and saved-file hash, then publish requested files.
 
-When the user corrects specific pages, update `layout_plan.md` and `style_selection.json` with the explicit reason. Regenerate the affected pages and the contact sheet. Keep earlier previews as versioned files when comparison is useful.
+Read [ImageGen-to-editable workflow](imagegen-to-editable.md) for provenance, original assets, reconstruction, optional page agents, and merge gates. A deterministic native preview without an ImageGen-generated layout for each page does not satisfy the default mode.
+
+Record selected candidate, liked/rejected features, and requested changes. When the user corrects pages, update payloads/evidence mappings if content changed, then the layout plan and style record. Regenerate and reconstruct affected pages; refresh the contact sheet and merged deck. Keep earlier versions internally when comparison is useful.
 
 ## Editability contract
 
-The following should be native editable objects: navigation, titles, body text, conclusion bands, parameter bands, panel mapping, arrows, connectors, tables, process diagrams, and page numbers. Original scientific figures may remain raster or vector image objects. Charts are data-editable only when rebuilt from user-provided data.
+Navigation, titles, slide text, conclusion/parameter bands, external panel mapping, slide arrows/connectors, tables, process diagrams, and page numbers are native editable objects. Original scientific figures remain independent image objects, preserving embedded axes, legends, labels, scale bars, and coherent artwork. State this boundary accurately; do not claim all internal figure labels are editable. Charts are data-editable only when rebuilt from supplied data at the user's request.
 
-## QA
+## QA and reporting
 
-Render every slide. Verify:
+Review generated images and rendered reconstructed pages. Confirm source-supported claims, nearby explanations, correct branding, parameter mapping, original evidence, varied evidence-driven layouts, readable figures, accurate notes, and no historical-template residue. Check generation provenance for every page and actual editability, rather than trusting a convincing screenshot.
 
-- no overflow, clipping, or overlap;
-- chapter title and page number are synchronized;
-- current institution and logo treatment are correct;
-- conclusion is supported by the displayed evidence;
-- each result/discussion slide has one page-level claim and each distinct figure group has a nearby reading explanation;
-- every panel parameter is mapped;
-- axes, legends, color bars, and scale bars are readable;
-- figures are not AI-redrawn;
-- adjacent evidence slides do not repeat the same body wireframe without a source-driven reason;
-- scientific figures use the largest practical readable size, with blank source margins trimmed when safe;
-- bottom information bands appear only when they carry shared conditions, units, case mapping, or quantitative summaries;
-- speaker notes match the final slide;
-- the PPTX package opens and expected native text objects exist.
+Reuse accepted page renders after an unchanged ordered merge; verify count/order, canvas, objects/assets, headers, notes, and final hash. Report only checks actually performed. Name the renderer and material limits. Never claim an unchanged V2.1/V2.2 validator pass for this academic adaptation. Failed gates remain unfinished work.
 
-Report only checks actually performed. If native PowerPoint was not used for rendering, say which renderer was used and avoid claiming native-app fidelity.
-
-For preview-only work, report the rendered preview and QA artifacts and explicitly state that no PPTX was created.
+For preview-only work, publish evidence-complete previews. Clearly label layout-only previews when exact original-asset composition was unavailable; do not claim an evidence-complete preview in that case.
